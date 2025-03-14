@@ -37,7 +37,11 @@ practice writing Rust code.
 You currently need Rust installed on your machine to build and install this
 CLI. You can build the tool with the command `cargo build --release`. Once
 built you can move the file to a place on your file system that is on your
-$PATH, typically /usr/local/bin.
+`$PATH`, typically `/usr/local/bin`.
+
+```
+sudo cp target/release/smol-cli /usr/local/bin
+```
 
 ## Uninstallation
 
