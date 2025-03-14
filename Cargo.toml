@@ -6,7 +6,7 @@ authors = ["Ramanan <ramanan@funkaoshi.com>"]
 description = "A small CLI for posting to smol.pub that mimics the same interface as the smolpub.sh shell script."
 respository = "https://github.com/funkaoshi/smol-cli"
 license = "MIT"
-keywords = ["cli", "gemini", "gemtext", "smol.pub"]
+keywords = ["cli", "gemini", "gemtext"]
 categories = ["command-line-utilities"]
 
 [dependencies]
