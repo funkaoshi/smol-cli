@@ -1,7 +1,13 @@
 [package]
 name = "smol-cli"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+authors = ["Ramanan <ramanan@funkaoshi.com>"]
+description = "A small CLI for posting to smol.pub that mimics the same interface as the smolpub.sh shell script."
+respository = "https://github.com/funkaoshi/smol-cli"
+license = "MIT"
+keywords = ["cli", "gemini", "gemtext", "smol.pub"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
