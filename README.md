@@ -3,10 +3,10 @@
 A small CLI for posting to smol.pub that mimics the same interface as the
 smolpub.sh shell script.
 
-## Overview
+## Usage
 
 This tool lets you send properly formatted posts to https://smol.pub, a simple
-blogging platform that publishes to the Web, Gemini and Gopher.
+blogging platform that publishes to the Web, [Gemini][], and Gopher.
 
 A post is a [gemtext][] file that begins with a title, followed by a blank
 line, followed by the contents of the post. A post should be formatted using
@@ -25,6 +25,8 @@ program. I'll finsih that soon.
 
 The file name of the post becomes the posts slug: both will be unique.
 
+You need to
+
 Once you have saved your post you can send it off to smol.pub with the
 following command: `smol-cli <post>`. If the post doesn't exist, it will be
 created. If it does exist, it will be updated.
@@ -34,16 +36,21 @@ practice writing Rust code.
 
 ## Installation
 
-You currently need Rust installed on your machine to build and install this
-CLI. You can build the tool with the command `cargo build --release`. Once
-built you can move the file to a place on your file system that is on your
-`$PATH`, typically `/usr/local/bin`.
+### crates.io
+
+You can install this tool from crates.io: `cargo install smol-cli`. Remove with
+`cargo uninstall smol-cli`.
+
+### Source
+
+You can build the tool with the command `cargo build --release`. Once built you
+can move the file to a place on your file system that is on your `$PATH`,
+typically `/usr/local/bin`.
 
 ```
+cargo build --release
 sudo cp target/release/smol-cli /usr/local/bin
 ```
-
-## Uninstallation
 
 If you decide you hate this program, you can simply delete the binary and your
 authorization config file.
@@ -53,7 +60,5 @@ rm /usr/local/bin/smol-cli
 rm ~/.config/.smolpub
 ```
 
-## TODOS
-
-- Get rid of all the unwraps
-- Other stuff
+[gemini]: https://geminiprotocol.net/
+[gemtext]: https://geminiprotocol.net/docs/gemtext-specification.gmi
