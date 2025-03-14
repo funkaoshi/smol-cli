@@ -1,0 +1,9 @@
+[package]
+name = "smol-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+isahc = "1.7.2"
+urlencoding = "2.1.3"
